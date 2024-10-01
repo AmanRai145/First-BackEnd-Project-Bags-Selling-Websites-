@@ -7,6 +7,8 @@ const usersRouter = require("./routes/usersRouters")
 const productsRouter = require("./routes/productsRouters")
 const db = require("./config/mongoose-connection");
 
+require("dotenv").config();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
